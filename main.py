@@ -83,7 +83,7 @@ if __name__ == '__main__':
     g = Garage()
 
     for i in range(randint(1, 2)):
-        s = Kick_scooter(choice(weigh_params), choice(colors), name="Samokat")
+        s = Kick_scooter(choice(weigh_params), choice(colors), name="Kick_scooter")
         g.add(s)
 
     for i in range(randint(1, 2)):
@@ -91,7 +91,7 @@ if __name__ == '__main__':
         g.add(b)
 
     for i in range(randint(1, 2)):
-        e = Electric_scooter(choice(weigh_params), choice(colors), choice(motor_power), name="Elektrosamokat")
+        e = Electric_scooter(choice(weigh_params), choice(colors), choice(motor_power), name="Electric_scooter")
         g.add(e)
 
     for i in range(randint(1, 2)):
@@ -103,13 +103,13 @@ if __name__ == '__main__':
         g.add(a)
 
     for i in list:
-        if i.name == "Samokat":
+        if i.name == "Kick_scooter":
             print("Name: " + i.name + " Color: " + i.color + " Weight: " + str(i.weigh))
 
         if i.name == "Bycicle":
             print("Name: " + i.name + " Color: " + i.color + " Weight: " + i.weigh + " Gears: " + i.gears)
 
-        if i.name == "Elektrosamokat":
+        if i.name == "Electric_scooter":
             print("Name: " + i.name + " Color: " + i.color + " Weight: " + str(i.weigh) + " Motor power: " + str(i.motor_power))
 
         if i.name == "Moto":
